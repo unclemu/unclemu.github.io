@@ -12,4 +12,4 @@ A place to include any other types of information that you'd like to include abo
 
 ### Contact me
 
-[unclemu@proton.me](mailto:email@domain.com)
+[unclemu@proton.me](mailto:unclemu@proton.me)
