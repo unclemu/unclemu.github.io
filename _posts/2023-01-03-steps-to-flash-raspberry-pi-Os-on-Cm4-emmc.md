@@ -31,3 +31,8 @@ Third, `cd` into the `usbboot` directory and build using `rpiboot`:
 $ cd usbboot
 $ make
 ``
+
+Now there should be an `rpiboot` executable in the directory. To mount the eMMC storage, run:
+``
+$ sudo ./rpiboot
+``
