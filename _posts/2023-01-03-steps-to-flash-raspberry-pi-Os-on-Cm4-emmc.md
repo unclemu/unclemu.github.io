@@ -19,12 +19,18 @@ The next step is to download the Raspberry Pi usbboot repository, install a requ
 
 First, be sure that `libusb` library has been installed:
 - On my Mac, I used homebrew (package manager), to run this command:
-``` brew install pkgconfig libusb ```
+``` 
+brew install pkgconfig libusb
+```
 - On Linux, use terminal to run: 
-``` sudo apt install libusb-1.0-0-dev ```
+``` 
+sudo apt install libusb-1.0-0-dev 
+```
 
 Second, clone the usbboot repository to your computer:
-``` $ get clone --depth=1 https://github.com/raspberrypi/usbboot ```
+``` 
+$ get clone --depth=1 https://github.com/raspberrypi/usbboot 
+```
 
 Third, `cd` into the `usbboot` directory and build using `rpiboot`:
 ```
