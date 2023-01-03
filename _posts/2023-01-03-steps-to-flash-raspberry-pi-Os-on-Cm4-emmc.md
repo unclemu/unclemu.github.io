@@ -14,5 +14,6 @@ Then, plug a USB cable from your computer (in my case, Mac--but it could be a Wi
 
 The board will power on, and you will see the red **D1 LED** turn on, but the Compute Module won't boot. The eMMMC should now be ready for the next step.
 
-## Using usbboot to mount the eMMC storage
+## Using usbboot script to mount the eMMC storage
+The next step is to download the Raspberry Pi usbboot repository, install a required USB library on your computer, and build the `rpiboot` executable, which you will use to mount the storage on your computer. I did all of this in the Terminal application on my Mac
 
