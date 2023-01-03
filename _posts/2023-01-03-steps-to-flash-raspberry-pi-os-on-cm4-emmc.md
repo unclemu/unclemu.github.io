@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 # Steps to Flash Raspberry Pi OS on CM4 eMMC
 
