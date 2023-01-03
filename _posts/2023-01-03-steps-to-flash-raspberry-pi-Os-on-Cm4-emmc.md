@@ -20,11 +20,11 @@ The next step is to download the Raspberry Pi usbboot repository, install a requ
 First, be sure that `libusb` library has been installed:
 - On my Mac, I used homebrew (package manager), to run this command:
 ``` 
-brew install pkgconfig libusb
+$ brew install pkgconfig libusb
 ```
 - On Linux, use terminal to run: 
 ``` 
-sudo apt install libusb-1.0-0-dev 
+$ sudo apt install libusb-1.0-0-dev
 ```
 
 Second, clone the usbboot repository to your computer:
@@ -44,4 +44,11 @@ $ sudo ./rpiboot
 ```
 
 And few seconds later, after if finishes doing its magic, you should see the `boot` volume mounted on your Mac (or whatever OS your are using).
-You might also notice the D2 LED lighting up; that indicate there is disk read/write activity on the eMMC.
+You might also notice the D2 LED lighting up; that indicate there is disk **read/write** activity on the eMMC.
+
+## Flashing Raspberry Pi OS onto the eMMC
+Moment of truth, now the eMMC storage behaves just like a **microSD card** or **USB drive** that you plugged into your computer. Use an application like the **Raspberry Pi Imager** to flash Raspberry Pi OS (or any other OS of your choice) to the eMMC.
+
+At this point, if you are not planning to do any modifications to the contents  of the `boot` volume, you could disconnect the IO Board **USB Slave port** connection, eject the `boot` volume if it is still mounted, disconnect power from the board, then remove the **J2 jumber** from eMMC Boot Disable pins.
+
+Aterwards, plug the power back in, and the **CM4** should now boot off it's new freshly-flashed Operating System from the eMMC storage!
