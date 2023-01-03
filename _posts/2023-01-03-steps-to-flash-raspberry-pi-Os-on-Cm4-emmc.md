@@ -36,3 +36,6 @@ Now there should be an `rpiboot` executable in the directory. To mount the eMMC 
 ```
 $ sudo ./rpiboot
 ```
+
+And few seconds later, after if finishes doing its magic, you should see the `boot` volume mounted on your Mac (or whatever OS your are using).
+You might also notice the D2 LED lighting up; that indicate there is disk read/write activity on the eMMC.
