@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 ---
 
 Today we are going to play with Raspberry Pi Compute Module 4, by tring to flash its **eMMC** storage with Rasbian OS instead of MicroSD Card.
