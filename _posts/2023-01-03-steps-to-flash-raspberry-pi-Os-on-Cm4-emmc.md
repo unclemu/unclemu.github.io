@@ -17,3 +17,15 @@ The board will power on, and you will see the red **D1 LED** turn on, but the Co
 ## Using usbboot script to mount the eMMC storage
 The next step is to download the Raspberry Pi usbboot repository, install a required USB library on your computer, and build the `rpiboot` executable, which you will use to mount the storage on your computer. I did all of this in the Terminal application on my Mac
 
+First, be sure that `libusb` library has been installed:
+- On my Mac, I used homebrew (package manager), to run this command: `brew install pkgconfig libusb`
+- On Linux, use terminal to run: `sudo apt install libusb-1.0-0-dev`
+
+Second, clone the usbboot repository to your computer:
+`$ git clone --depth=1 https://github.com/raspberrypi/usbboot`
+
+Third, `cd` into the `usbboot` directory and build using `rpiboot`:
+```
+$ cd usbboot
+$ make
+```
