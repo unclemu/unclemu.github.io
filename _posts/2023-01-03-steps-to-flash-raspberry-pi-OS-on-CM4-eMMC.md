@@ -9,7 +9,7 @@ This post shows how to mount eMMC storage on another computer (MAC in my case), 
 ## IO Board mount preparation 
 First of all you need the [Raspberry Pi Offical IO Board](https://www.raspberrypi.com/products/compute-module-4-io-board/ "IO Board").
 
-![IO Board]({{site.baseurl}}/https://drive.google.com/file/d/1RAH2ijSSlRT9WTEeo2kKD-EmSNQ7yrha/view?usp=sharing)
+![IO Board]({{site.baseurl}}/_posts/IMG_0826.heif)
 
 Before you can put the eMMC storage into USB mass storage mode, you have to put a **jumper** over the first set of pins on the board--the jumper labeled **"Fit jumper to disable eMMC Boot"**.
 
