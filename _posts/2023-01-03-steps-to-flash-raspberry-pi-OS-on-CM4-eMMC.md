@@ -8,6 +8,7 @@ This post shows how to mount eMMC storage on another computer (MAC in my case), 
 
 ## IO Board mount preparation 
 First of all you need the [Raspberry Pi Offical IO Board](https://www.raspberrypi.com/products/compute-module-4-io-board/ "IO Board").
+![IO Board]({{site.baseurl}}/https://drive.google.com/file/d/1RAH2ijSSlRT9WTEeo2kKD-EmSNQ7yrha/view?usp=sharing)
 Before you can put the eMMC storage into USB mass storage mode, you have to put a **jumper** over the first set of pins on the board--the jumper labeled **"Fit jumper to disable eMMC Boot"**.
 
 Then, plug a USB cable from your computer (in my case, Mac--but it could be a Windows or Linux too) into the **USB Slave** micro USB port on the IO Board, and plug in power.
@@ -29,7 +30,7 @@ $ sudo apt install libusb-1.0-0-dev
 
 Second, clone the usbboot repository to your computer:
 ``` 
-$ get clone --depth=1 https://github.com/raspberrypi/usbboot 
+$ git clone --depth=1 https://github.com/raspberrypi/usbboot 
 ```
 
 Third, `cd` into the `usbboot` directory and build using `rpiboot`:
